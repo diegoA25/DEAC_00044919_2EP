@@ -36,3 +36,6 @@ C:\Users\diego\Desktop\DEAC_00044919_2EP\SourceCode\DEAC_2EP\obj\Debug\DEAC_2EP.
 C:\Users\diego\Desktop\DEAC_00044919_2EP\SourceCode\DEAC_2EP\obj\Debug\DEAC_2EP.MenuPrincipalComun.resources
 C:\Users\diego\Desktop\DEAC_00044919_2EP\SourceCode\DEAC_2EP\obj\Debug\DEAC_2EP.Pedidos.resources
 C:\Users\diego\Desktop\DEAC_00044919_2EP\SourceCode\DEAC_2EP\obj\Debug\DEAC_2EP.VerPed.resources
+C:\Users\diego\Desktop\DEAC_00044919_2EP\SourceCode\DEAC_2EP\obj\Debug\DEAC_2EP.Direccion.resources
+C:\Users\diego\Desktop\DEAC_00044919_2EP\SourceCode\DEAC_2EP\obj\Debug\DEAC_2EP.Empresas.resources
+C:\Users\diego\Desktop\DEAC_00044919_2EP\SourceCode\DEAC_2EP\obj\Debug\DEAC_2EP.Productos.resources
