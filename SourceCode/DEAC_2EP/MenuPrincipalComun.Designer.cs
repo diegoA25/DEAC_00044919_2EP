@@ -101,7 +101,7 @@ namespace DEAC_2EP
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(160, 88);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Ver Pedidos";
+            this.button2.Text = "Pedidos";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -115,7 +115,7 @@ namespace DEAC_2EP
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 88);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Realizar Pedido";
+            this.button1.Text = "Ordenar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -131,6 +131,7 @@ namespace DEAC_2EP
             this.button5.TabIndex = 4;
             this.button5.Text = "Direccion";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // MenuPrincipalComun
             // 

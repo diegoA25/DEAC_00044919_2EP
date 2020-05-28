@@ -89,6 +89,18 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="ConexionBDD.cs" />
+        <Compile Include="Direccion.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Direccion.Designer.cs">
+          <DependentUpon>Direccion.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Empresas.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Empresas.Designer.cs">
+          <DependentUpon>Empresas.cs</DependentUpon>
+        </Compile>
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -101,12 +113,6 @@
         <Compile Include="LogIn.Designer.cs">
           <DependentUpon>LogIn.cs</DependentUpon>
         </Compile>
-        <Compile Include="MenuPrincipalAd.cs">
-          <SubType>UserControl</SubType>
-        </Compile>
-        <Compile Include="MenuPrincipalAd.Designer.cs">
-          <DependentUpon>MenuPrincipalAd.cs</DependentUpon>
-        </Compile>
         <Compile Include="MenuPrincipalComun.cs">
           <SubType>UserControl</SubType>
         </Compile>
@@ -118,6 +124,12 @@
         </Compile>
         <Compile Include="Pedidos.Designer.cs">
           <DependentUpon>Pedidos.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Productos.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Productos.Designer.cs">
+          <DependentUpon>Productos.cs</DependentUpon>
         </Compile>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
@@ -133,20 +145,26 @@
         <Compile Include="VerPed.Designer.cs">
           <DependentUpon>VerPed.cs</DependentUpon>
         </Compile>
+        <EmbeddedResource Include="Direccion.resx">
+          <DependentUpon>Direccion.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Empresas.resx">
+          <DependentUpon>Empresas.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Form1.resx">
           <DependentUpon>Form1.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="LogIn.resx">
           <DependentUpon>LogIn.cs</DependentUpon>
         </EmbeddedResource>
-        <EmbeddedResource Include="MenuPrincipalAd.resx">
-          <DependentUpon>MenuPrincipalAd.cs</DependentUpon>
-        </EmbeddedResource>
         <EmbeddedResource Include="MenuPrincipalComun.resx">
           <DependentUpon>MenuPrincipalComun.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Pedidos.resx">
           <DependentUpon>Pedidos.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Productos.resx">
+          <DependentUpon>Productos.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>

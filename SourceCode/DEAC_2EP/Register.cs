@@ -22,8 +22,13 @@ namespace DEAC_2EP
             {
                 try
                 {
-                    ConexionBDD.ExecuteNonQuery(
-                        $"INSERT INTO USER VALUES('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}'");
+                    bool dato = false;
+                    if (textBox4.Text.Equals("Administrador"))
+                    {
+                        dato = true;
+                    }
+                    string sql = $"INSERT INTO APPUSER(fullname, username, password, userType) VALUES('{textBox1.Text}', '{textBox2.Text}', '{textBox3.Text}', {dato})";
+                    ConexionBDD.ExecuteNonQuery(sql);
                     
                     MessageBox.Show("Nuevo usuario registrado!");
                 }

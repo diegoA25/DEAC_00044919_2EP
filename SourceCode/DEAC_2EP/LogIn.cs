@@ -11,12 +11,12 @@ namespace DEAC_2EP
         public LogIn()
         {
             InitializeComponent();
-            current = new MenuPrincipal();
+            current = new MenuPrincipalComun();
         }
 
         private void LogIn_Load(object sender, EventArgs e)
         {
-            var users = ConexionBDD.ExecuteQuery("SELECT nomUser FROM PUBLIC.USER");
+            var users = ConexionBDD.ExecuteQuery("SELECT username FROM APPUSER");
             var usersCombo = new List<string>();
 
             foreach (DataRow dr in users.Rows)
@@ -29,22 +29,11 @@ namespace DEAC_2EP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string query = $"SELECT tipoUser FROM USER WHERE nomCom = '{comboBox1.SelectedItem.ToString()}'";
-
-            var dt = ConexionBDD.ExecuteQuery(query);
-
-            if (dt.Equals("Administrador"))
-            {
-                tableLayoutPanel1.Controls.Remove(current);
-                current = new MenuPrincipal();
-                tableLayoutPanel1.Controls.Add(current);
-            }
-            else if (dt.Equals("Comun"))
-            {
-                tableLayoutPanel1.Controls.Remove(current);
-                current = new MenuPrincipalComun();
-                tableLayoutPanel1.Controls.Add(current);
-            }
+            tableLayoutPanel1.Controls.Remove(current);
+            current = new MenuPrincipalComun();
+            tableLayoutPanel1.Controls.Add(current, 0,1);
+            tableLayoutPanel1.SetColumnSpan(current, 2);
+            tableLayoutPanel1.SetRowSpan(current, 2);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace DEAC_2EP
             password = "abregoC22";
 
         private static string sConnection =
-            $"Server = {host}; Port=5432;User Id={userId};PassWord={password};Database={database};";
+            $"Server={host};Port=5432;User Id={userId};PassWord={password};Database={database};";
 
         public static DataTable ExecuteQuery(string query)
         {
